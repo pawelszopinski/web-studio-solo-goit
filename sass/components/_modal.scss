@@ -1,0 +1,180 @@
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000033;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity var(--standard-transition-duration) ease,
+    visibility var(--standard-transition-duration) ease;
+}
+
+.modal {
+  position: absolute;
+  min-height: 581px;
+  width: 528px;
+  top: 50%;
+  left: 50%;
+  border-radius: 4px;
+  padding: 40px;
+  background: var(--footer-second-color);
+  box-shadow: 0px 2px 1px 0px var(--second-button-shadow), 0px 1px 1px 0px #00000024,
+    0px 1px 3px 0px #0000001f;
+  transform: translate(-50%, -50%) scale(1);
+  transition-property: transform;
+  transition-duration: 2s;
+  transition-timing-function: ease;
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  &__close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #0000001a;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: var(--footer-second-color);
+  }
+  &__header {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+
+  &__form {
+    margin-top: 12px;
+    &-label {
+      display: block;
+      font-size: 12px;
+      line-height: 1.16;
+      letter-spacing: 0.01em;
+      margin-bottom: 4px;
+      margin-top: 10px;
+      color: var(--third-color);
+    }
+    &-personal-input {
+      display: block;
+      width: 100%;
+      height: 40px;
+      border: 1px solid #21212133;
+      border-radius: 4px;
+      padding-left: 42px;
+      &:focus {
+        border: 1px solid var(--secondary-color);
+        outline: none;
+        transition-property: border;
+        transition-duration: var(--standard-transition-duration);
+        transition-timing-function: var(--standard-transition-flow);
+      }
+      &:focus + .modal__form-icon {
+        fill: var(--secondary-color);
+        transition-property: fill;
+        transition-duration: var(--standard-transition-duration);
+        transition-timing-function: var(--standard-transition-flow);
+      }
+    }
+    &-textarea {
+      padding: 12px 16px;
+      resize: none;
+      border: 1px solid #21212133;
+      border-radius: 4px;
+      width: 100%;
+      font-size: 12px;
+      line-height: 1.16;
+      letter-spacing: 0.01em;
+      margin-bottom: 20px;
+      &:focus {
+        border: 1px solid var(--secondary-color);
+        outline: none;
+        transition-property: border;
+        transition-duration: var(--standard-transition-duration);
+        transition-timing-function: var(--standard-transition-flow);
+      }
+      &::placeholder {
+        color: #75757580;
+      }
+    }
+    &-checkbox {
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.714;
+      letter-spacing: 0.03em;
+      color: var(--third-color);
+      margin-left: 15px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    &-hidden-checkbox {
+      position: relative;
+      appearance: none;
+      border: 2px solid var(--brand-color);
+      width: 16px;
+      height: 15px;
+      border-radius: 2px;
+      &:checked {
+        background-color: var(--secondary-color);
+        border: none;
+        & + .modal__form-custom-checkbox {
+          opacity: 1;
+        }
+      }
+    }
+    &-custom-checkbox {
+      opacity: 0;
+      position: absolute;
+      fill: var(--footer-second-color);
+    }
+    &-link {
+      color: var(--secondary-color);
+    }
+    &-button {
+      width: 200px;
+      height: 50px;
+      margin-top: 30px;
+      margin-left: 124px;
+      background-color: var(--secondary-color);
+      font-weight: 700;
+      line-height: 1.875;
+      letter-spacing: 0.06em;
+      color: var(--footer-second-color);
+      border-radius: 4px;
+      border: none;
+      outline: none;
+      &:hover,
+      &:focus {
+        box-shadow: 0px 4px 4px 0px var(--first-button-shadow);
+        transition: var(--standard-transition-duration) box-shadow var(--standard-transition-flow);
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__form-icon {
+    &--email {
+      position: absolute;
+      left: 53.5px;
+      top: 243px;
+    }
+    &--phone {
+      position: absolute;
+      left: 54.27px;
+      top: 174.26px;
+    }
+    &--person {
+      position: absolute;
+      left: 55px;
+      top: 107px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.paragraph-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+  &__header {
+    font-size: 14px;
+    line-height: 1.875;
+    color: var(--brand-color);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-top: 30px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.714;
+    color: var(--third-color);
+    letter-spacing: 0.03em;
+    text-align: justify;
+  }
+}

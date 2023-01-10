@@ -1,0 +1,64 @@
+.staff {
+  background: var(--button-filter-color);
+
+  &__title {
+    font-size: 36px;
+    line-height: 1.166;
+    color: var(--brand-color);
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  &__list-item {
+    line-height: 1.188;
+    letter-spacing: 0.03em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &--names {
+      font-weight: 500;
+      color: var(--brand-color);
+      padding-top: 30px;
+    }
+    &--jobs {
+      color: var(--third-color);
+      padding-top: 10px;
+    }
+  }
+  &__figure {
+    box-shadow: 0px 2px 1px 0px var(--second-button-shadow);
+    box-shadow: 0px 1px 1px 0px var(--third-button-shadow);
+    box-shadow: 0px 1px 3px 0px var(--fourth-button-shadow);
+    border-radius: 0 0 4px 4px;
+    background-color: var(--footer-second-color);
+    padding-bottom: 30px;
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+  }
+  &__socials-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 12px;
+    display: inline-block;
+    fill: var(--icons-color);
+    transition-property: fill, background-color;
+    transition-duration: var(--standard-transition-duration);
+    transition-timing-function: var(--standard-transition-flow);
+    &:hover,
+    &:focus {
+      background-color: var(--secondary-color);
+      fill: var(--footer-second-color);
+    }
+  }
+}

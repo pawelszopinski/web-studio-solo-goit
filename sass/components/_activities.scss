@@ -1,0 +1,39 @@
+.activities {
+  margin-top: -94px;
+
+  &__title {
+    font-size: 36px;
+    line-height: 1.166;
+    color: var(--brand-color);
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  &__picture-wrapper {
+    position: relative;
+  }
+
+  &__note {
+    position: absolute;
+    max-height: 70px;
+    background: var(--activities-overlay);
+    top: 224px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 27px 90px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--footer-second-color);
+  }
+}
