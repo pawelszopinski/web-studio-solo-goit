@@ -2,24 +2,26 @@
   border-bottom: 1px solid var(--border-color);
 
   &__wrapper {
-    display: flex;
-    align-items: center;
     padding: 16px 15px;
-    justify-content: space-between;
   }
 
   &__nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   &__button {
     border: none;
     outline: none;
     background: none;
+    cursor: pointer;
+    
   }
   &__menu-icon {
-    fill: #fff;
-    align-items: center;
+    &:hover,
+    &:focus {
+        fill: var(--secondary-color);
+      }
   }
   }
 

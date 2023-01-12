@@ -4,18 +4,23 @@
 
   &__nav {
     display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   &__list {
     font-style: normal;
+    text-align: center;
   }
   &__list-address {
     color: var(--footer-second-color);
-    margin: 20px 70px 9px 0px;
-    width: fit-content;
+    margin-top: 20px;
+    width: 100%;
     font-size: 14px;
+    text-align: center;
   }
 
   &__list-link {
+    text-align: center;
     margin-top: 9px;
     display: block;
     color: var(--footer-first-color);
@@ -78,3 +83,85 @@
     text-transform: uppercase;
   }
 }
+
+
+// .footer {
+//   background-color: var(--background-color);
+//   padding: 60px 0;
+
+//   &__nav {
+//     display: flex;
+//   }
+//   &__list {
+//     font-style: normal;
+//   }
+//   &__list-address {
+//     color: var(--footer-second-color);
+//     margin: 20px 70px 9px 0px;
+//     width: fit-content;
+//     font-size: 14px;
+//   }
+
+//   &__list-link {
+//     margin-top: 9px;
+//     display: block;
+//     color: var(--footer-first-color);
+//     line-height: 1.714;
+//     width: fit-content;
+//     text-decoration: none;
+//     transition-property: color;
+//     transition-duration: var(--standard-transition-duration);
+//     transition-timing-function: var(--standard-transition-flow);
+//     &:focus,
+//     &:hover {
+//       color: var(--secondary-color);
+//     }
+//   }
+//   &__list-link--underline {
+//     text-decoration: underline;
+//     &:focus,
+//     &:hover {
+//       color: var(--secondary-color);
+//     }
+//   }
+//   &__container {
+//     margin-top: 12px;
+//   }
+//   &__socials {
+//     display: flex;
+//     justify-content: center;
+//     gap: 10px;
+//     margin-top: 16px;
+//     &--margin {
+//       width: fit-content;
+//       margin-top: 20px;
+//     }
+//   }
+
+//   &__socials-link {
+//     width: 44px;
+//     height: 44px;
+//     border-radius: 50%;
+//     background-color: #ffffff1a;
+//     padding: 12px;
+//     display: inline-block;
+//     fill: var(--footer-second-color);
+//     transition-property: color, background-color;
+//     transition-duration: var(--standard-transition-duration);
+//     transition-timing-function: var(--standard-transition-flow);
+//     &:hover,
+//     &:focus {
+//       background-color: var(--secondary-color);
+//       fill: var(--footer-second-color);
+//     }
+//   }
+
+//   &__header {
+//     font-size: 14px;
+//     font-weight: 700;
+//     line-height: 1.142;
+//     color: var(--footer-second-color);
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//   }
+// }

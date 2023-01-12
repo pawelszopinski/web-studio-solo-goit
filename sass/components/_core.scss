@@ -1,15 +1,18 @@
 body {
   font-family: var(--main-font), var(--font-fallback);
 }
-
 .section {
-  padding: 94px 30px;
+  padding: 60px 0px;
 }
+// .section { DESKTOP
+//   padding: 94px 30px;
+// }
 .container {
-  max-width: 1200px;
+  min-width: 320px;
+  max-width: 768px;
   padding: 0 15px;
   margin: auto;
-  width: 100%;
+  
 }
 
 /*.container {
