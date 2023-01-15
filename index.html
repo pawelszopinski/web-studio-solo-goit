@@ -24,10 +24,10 @@
       <div class="container header__wrapper">
         <nav class="header__nav">
           <a class="logo" href="index.html">Web<span class="logo logo__studio">Studio</span></a>
-          <button type="button" class="header__button">
+          <button type="button" class="header__button js-open-menu">
             <svg class="header__menu-icon" tabindex="0"  width="40px" height="40px"><use href="./images/icons.svg#icon-menu_40px"></use></svg>
           </button>
-          <!--<ul class="header__nav-list header__nav-list--menu">
+          <ul class="header__nav-list header__nav-list--menu">
             <li><a class="header__link header__link--active" href="index.html">Agencja</a></li>
             <li>
               <a class="header__link header__link--passive" href="portfolio.html">Portfolio</a>
@@ -53,7 +53,7 @@
               +48 111 111 111
             </a>
           </li>
-        </ul>-->
+        </ul>
       </div>
     </header>
     <main>
@@ -67,8 +67,8 @@
         <div class="container">
           <ul class="paragraph-section">
             <li>
-              <svg width="100%" height="100%" viewBox="0 0 20 10" class="paragraph__image">             
-                <use href="./images/icons.svg#icon-Group-1"></use>
+              <svg>             
+                <use href="./images/icons.svg#icon-Group-1" class="paragraph__image"></use>
               </svg>
               <h3 class="paragraph-section__header">Lorem ipsum</h3>
               <p class="paragraph-section__text">
@@ -77,7 +77,7 @@
               </p>
             </li>
             <li>
-              <svg width="100%" height="100%" viewBox="0 0 20 10">
+              <svg>
                 <use href="./images/icons.svg#icon-Group-2"></use>
               </svg>
               <h3 class="paragraph-section__header">Lorem ipsum</h3>
@@ -97,7 +97,7 @@
               </p>
             </li>
             <li>
-              <svg width="100%" height="100%" class="paragraph__picture">
+              <svg class="paragraph__picture">
                 <use href="./images/icons.svg#icon-Group-4"></use>
               </svg>
               <h3 class="paragraph-section__header">Lorem ipsum</h3>
@@ -109,7 +109,7 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="section activities">
+      <section class="section activities">
         <div class="container">
           <h2 class="activities__title">Czym się zajmujemy?</h2>
           <ul class="activities__list">
@@ -441,6 +441,29 @@
         </div>
       </div>
     </footer>
+    <div class="menu js-menu-container">
+      <button class="menu__toggle js-close-menu">
+        <svg><use></use></svg>
+      </button>
+      <div class="menu__container">
+        <ul>
+          <li><a href="#">Agencja</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">+48</a></li>
+          <li><a href="#">info</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__close-button" data-modal-close>×</button>
@@ -493,6 +516,6 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script> 
   </body>
 </html>

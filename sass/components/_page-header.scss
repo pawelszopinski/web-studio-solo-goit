@@ -1,29 +1,140 @@
 .header {
   border-bottom: 1px solid var(--border-color);
-
+@include tablet {
+  display: flex;
+}
   &__wrapper {
     padding: 16px 15px;
+  @include tablet {
+    display: flex;
+    align-items: center;
+  }
   }
 
   &__nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  @include tablet {
+    gap: 93px;
   }
-  &__button {
+}
+  &__button {    /*"menu-toggle"*/
     border: none;
     outline: none;
     background: none;
     cursor: pointer;
-    
+    @include tablet {
+      display: none;
+    }
   }
   &__menu-icon {
     &:hover,
     &:focus {
         fill: var(--secondary-color);
       }
+    
+  }
+  &__nav-list {
+    display: none;
+    @include tablet {
+      display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.142;
+    letter-spacing: 0.02em;}
+    &--menu {
+      @include tablet{
+      display: flex;
+      align-items: center;
+      gap: 46px;
+    }
+  }
+    &--contacts {
+      @include tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding-left: 20vw;
+    }
+    @include desktop {
+      flex-direction: row;
+      gap: 50px;
+    }
   }
   }
+
+  &__icon {
+    @include tablet {
+    margin-right: 10px;
+  }
+}
+  
+  &__link {
+    @include tablet {
+    text-decoration: none;
+    color: var(--brand-color);
+    transition-property: color;
+    transition-duration: var(--standard-transition-duration);
+    transition-timing-function: var(--standard-transition-flow);
+    position: relative;
+    }
+    &:hover,
+    &:focus {
+    @include tablet {
+      color: var(--secondary-color);
+    }
+  }
+  
+    &--active {
+      color: var(--secondary-color);
+      &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 43px;
+        width: 100%;
+        height: 4px;
+        background-color: var(--secondary-color);
+        border-radius: 2px;
+        transition-property: background-color;
+        transition-duration: var(--standard-transition-duration);
+        transition-timing-function: var(--standard-transition-flow);
+        @include desktop {
+          top: 38px;
+        }
+      }
+    }
+    &--passive:hover::after,
+    &--passive:focus::after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 46px;
+      width: 100%;
+      height: 4px;
+      background-color: var(--secondary-color);
+      border-radius: 2px;
+      transition-property: background-color;
+      transition-duration: var(--standard-transition-duration);
+      transition-timing-function: var(--standard-transition-flow);
+    }
+    &-contacts {
+      color: var(--third-color);
+      text-decoration: none;
+      fill: currentColor;
+      transition-property: fill, color;
+      transition-duration: var(--standard-transition-duration);
+      transition-timing-function: var(--standard-transition-flow);
+      &:hover,
+      &:focus {
+        color: var(--secondary-color);
+        fill: var(--secondary-color);
+      }
+    }
+  }
+  }
+  
 
 
 

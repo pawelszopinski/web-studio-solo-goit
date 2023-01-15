@@ -1,4 +1,5 @@
 @import 'components/globals';
+@import 'utils/mixins';
 @import 'utils/variables';
 @import 'components/core';
 @import 'components/logo';
@@ -12,4 +13,4 @@
 @import 'components/staff';
 @import 'components/clients';
 @import 'components/order';
-@import 'components/modal.scss';
+@import 'components/menu';

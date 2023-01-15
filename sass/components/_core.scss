@@ -3,13 +3,17 @@ body {
 }
 .section {
   padding: 60px 0px;
+  @include desktop {
+    padding: 94px 30px;
+  }
 }
+
 // .section { DESKTOP
 //   padding: 94px 30px;
 // }
 .container {
-  min-width: 320px;
-  max-width: 768px;
+  width:100%;
+  max-width: 1200px;
   padding: 0 15px;
   margin: auto;
   

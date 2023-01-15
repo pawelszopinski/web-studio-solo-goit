@@ -16,8 +16,8 @@
     letter-spacing: 0.03em;
     text-align: justify;
   }
-  &__picture{
-    height: 60%;
+  &__image {
+    width: calc(100vw - 2*15px)
   }
 }
 
