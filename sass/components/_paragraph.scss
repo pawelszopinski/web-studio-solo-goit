@@ -1,5 +1,19 @@
 .paragraph-section {
-
+  text-align: center;
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 30px;
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    @include desktop {
+      flex-wrap: nowrap;
+    }
+  }
   &__header {
     font-size: 14px;
     line-height: 1.875;
@@ -7,6 +21,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-top: 30px;
+    text-align: center;
   }
 
   &__text {
@@ -14,10 +29,16 @@
     line-height: 1.714;
     color: var(--third-color);
     letter-spacing: 0.03em;
-    text-align: justify;
   }
-  &__image {
-    width: calc(100vw - 2*15px)
+  &__item {
+    max-width: 352px;
+  }
+  &__icon {
+    background-color: grey;
+
+    padding: 25px 100px;
+    border-radius: 4px;
+    margin-top: 30px;
   }
 }
 

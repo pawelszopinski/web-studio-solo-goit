@@ -1,6 +1,7 @@
 .activities{
 margin-top: -94px;
-
+display: none;
+@include desktop {
 &__title {
     font-size: 36px;
     line-height: 1.166;
@@ -36,4 +37,5 @@ margin-top: -94px;
     text-transform: uppercase;
     color: var(--footer-second-color);
   }
+}
 }
