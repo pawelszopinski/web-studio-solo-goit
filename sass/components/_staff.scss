@@ -19,7 +19,7 @@
       flex-direction: row;
     }
     @include desktop {
-      justify-content: space-between;
+      flex-wrap: nowrap;
     }
   }
   &__list-item {
