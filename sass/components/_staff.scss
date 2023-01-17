@@ -7,12 +7,20 @@
     color: var(--brand-color);
     letter-spacing: 0.03em;
     text-align: center;
+    margin-bottom: 50px;
   }
   &__list {
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
+    align-items: center;
     gap: 30px;
+    @include tablet {
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    @include desktop {
+      justify-content: space-between;
+    }
   }
   &__list-item {
     line-height: 1.188;
@@ -31,14 +39,18 @@
     }
   }
   &__figure {
-    box-shadow: 0px 2px 1px 0px var(--second-button-shadow);
-    box-shadow: 0px 1px 1px 0px var(--third-button-shadow);
-    box-shadow: 0px 1px 3px 0px var(--fourth-button-shadow);
+    box-shadow: 0px 2px 1px 0px var(--second-button-shadow),
+      0px 1px 1px 0px var(--third-button-shadow), 0px 1px 3px 0px var(--fourth-button-shadow);
     border-radius: 0 0 4px 4px;
     background-color: var(--footer-second-color);
-    padding-bottom: 30px;
-    margin-top: 30px;
-    
+    padding-bottom: 24px;
+    max-width: 450px;
+    @include tablet {
+      max-width: 354px;
+    }
+    @include desktop {
+      max-width: 274px;
+    }
   }
 
   &__socials {

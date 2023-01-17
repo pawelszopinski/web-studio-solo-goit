@@ -2,6 +2,8 @@
 margin-top: -94px;
 display: none;
 @include desktop {
+  display:block;
+}
 &__title {
     font-size: 36px;
     line-height: 1.166;
@@ -37,5 +39,4 @@ display: none;
     text-transform: uppercase;
     color: var(--footer-second-color);
   }
-}
 }

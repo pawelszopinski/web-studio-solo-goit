@@ -16,8 +16,8 @@
 
 .modal {
   position: absolute;
-  min-height: 581px;
-  width: 528px;
+  max-height: 581px;
+  max-width: 528px;
   top: 50%;
   left: 50%;
   border-radius: 4px;

@@ -10,10 +10,10 @@
   }
   &__list {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
     flex-wrap:wrap;
-    gap: min(5vw, 30px);
+    gap: 30px;
     @include tablet {
       flex-direction: row;
     }
@@ -23,26 +23,25 @@
       flex-wrap: nowrap;
     }
   }
-  &__link-box {
-    @include tablet {
-    min-width: calc(100% / 2 - 2 * 15px);
-    }
-    @include desktop {
-      min-width: 170px;
-    }
-    
-  }
   &__link {
-    width: 170px;
-    height: 92px;
+    max-width: 210px;
+    max-height: 92px;
     display: inline-block;
-    padding: 16px 32px;
+    padding: 16px 52px;
     border: 1px solid var(--icons-color);
     border-radius: 4px;
     fill: var(--icons-color);
     transition-property: fill, border;
     transition-duration: var(--standard-transition-duration);
     transition-timing-function: var(--standard-transition-flow);
+    @include tablet {
+      max-width: 226px;
+      padding: 16px 60px;
+    }
+    @include desktop {
+      max-width: 170px;
+      padding: 16px 32px;
+    }
     &:hover,
     &:focus {
       border: 1px solid var(--secondary-color);
