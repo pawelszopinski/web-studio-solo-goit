@@ -517,26 +517,32 @@
         <button type="button" class="modal__close-button" data-modal-close>×</button>
         <header class="modal__header">Zostaw swoje dane w formularzu poniżej</header>
         <form class="modal__form" name="contact-form">
-          <label for="name-input" class="modal__form-label">Imię</label>
-          <input
-            class="modal__form-personal-input"
-            name="name-input"
-            minlength="3"
-            maxlength="20"
-          />
-          <svg class="modal__form-icon modal__form-icon--person" width="12" height="12">
-            <use href="./images/icons.svg#icon-person"></use>
-          </svg>
-          <label for="phone-input" class="modal__form-label">Telefon</label>
-          <input class="modal__form-personal-input" name="phone-input" type="tel" />
-          <svg class="modal__form-icon modal__form-icon--phone" width="13" height="13">
-            <use href="./images/icons.svg#icon-envelope1"></use>
-          </svg>
-          <label for="email-input-modal" class="modal__form-label">Email</label>
-          <input class="modal__form-personal-input" name="email-input-modal" type="email" />
-          <svg class="modal__form-icon modal__form-icon--email" width="15" height="12">
-            <use href="./images/icons.svg#icon-phone"></use>
-          </svg>
+          <label class="modal__form-label"
+            >Imię
+            <input
+              class="modal__form-personal-input"
+              name="name-input"
+              minlength="3"
+              maxlength="20"
+            />
+            <svg class="modal__form-icon modal__form-icon--person" width="12" height="12">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </label>
+          <label class="modal__form-label"
+            >Telefon
+            <input class="modal__form-personal-input" name="phone-input" type="tel" />
+            <svg class="modal__form-icon modal__form-icon--phone" width="13" height="13">
+              <use href="./images/icons.svg#icon-envelope1"></use>
+            </svg>
+          </label>
+          <label class="modal__form-label"
+            >Email
+            <input class="modal__form-personal-input" name="email-input-modal" type="email" />
+            <svg class="modal__form-icon modal__form-icon--email" width="15" height="12">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </label>
           <label for="comment" class="modal__form-label">Komentarz</label>
           <textarea
             class="modal__form-textarea"
@@ -571,23 +577,26 @@
           <use href="./images/icons.svg#icon-close_24px"></use>
         </svg>
       </button>
-      <ul>
-        <li><a href="index.html" class="menu__link">Agencja</a></li>
-        <li><a href="portfolio.html" class="menu__link menu__link--portfolio">Portfolio</a></li>
-        <li><a href="#" class="menu__link menu__link--contact">Kontakt</a></li>
-      </ul>
-      <ul class="menu__contacts">
-        <li><a class="menu__contacts menu__contacts--phone" href="#">+48 111 111 111</a></li>
-        <li><a class="menu__contacts menu__contacts--mail" href="#">info@devstudio.com</a></li>
-      </ul>
-      <ul class="menu__socials">
-        <li><a class="menu__socials menu__socials--border" href="#">Instagram</a></li>
-        <li><a class="menu__socials menu__socials--border" href="#">Twitter</a></li>
-        <li><a class="menu__socials menu__socials--border" href="#">Facebook</a></li>
-        <li><a class="menu__socials" href="#">LinkedIn</a></li>
-      </ul>
+      <div class="menu__wrapper">
+        <ul>
+          <li><a href="index.html" class="menu__link">Agencja</a></li>
+          <li><a href="portfolio.html" class="menu__link menu__link--portfolio">Portfolio</a></li>
+          <li><a href="#" class="menu__link menu__link--contact">Kontakt</a></li>
+        </ul>
+        <div>
+          <ul class="menu__contacts">
+            <li><a class="menu__contacts menu__contacts--phone" href="#">+48 111 111 111</a></li>
+            <li><a class="menu__contacts menu__contacts--mail" href="#">info@devstudio.com</a></li>
+          </ul>
+          <ul class="menu__socials">
+            <li><a class="menu__socials menu__socials--border" href="#">Instagram</a></li>
+            <li><a class="menu__socials menu__socials--border" href="#">Twitter</a></li>
+            <li><a class="menu__socials menu__socials--border" href="#">Facebook</a></li>
+            <li><a class="menu__socials" href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"

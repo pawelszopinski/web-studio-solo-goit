@@ -9,8 +9,13 @@ body {
 }
 
 .container {
-  width: 100%;
-  max-width: 1200px;
+  max-width: 480px;
   padding: 0 15px;
-  margin: auto;
+  margin: 0 auto;
+  @include tablet {
+    max-width: 768px;
+  }
+  @include desktop {
+    max-width: 1200px;
+  }
 }

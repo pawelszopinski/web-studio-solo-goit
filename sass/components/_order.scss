@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  min-height: 400px;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     & {
       background-image: linear-gradient(
@@ -49,6 +50,7 @@
     }
   }
   @include desktop {
+    min-height: 600px;
     background-image: linear-gradient(
         var(--background-second-color),
         var(--background-second-color)
