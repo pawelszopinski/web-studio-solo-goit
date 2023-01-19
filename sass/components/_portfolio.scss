@@ -1,8 +1,16 @@
 .portfolio-list {
-  list-style: none;
+  margin-top: 40px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 30px;
+  @include tablet {
+    margin-top: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @include desktop {
+    margin-top: 50px;
+  }
   &__picture {
     position: relative;
     width: 100%;

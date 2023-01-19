@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./images/icons8-portfolio-16.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -25,6 +26,16 @@
       <div class="container header__wrapper">
         <nav class="header__nav">
           <a class="logo" href="index.html">Web<span class="logo logo__studio">Studio</span></a>
+          <button
+            type="button"
+            class="header__button js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="header__menu-icon" tabindex="0" width="40px" height="40px">
+              <use href="./images/icons.svg#icon-menu_40px"></use>
+            </svg>
+          </button>
           <ul class="header__nav-list header__nav-list--menu">
             <li><a class="header__link header__link--passive" href="index.html">Agencja</a></li>
             <li>
@@ -57,21 +68,46 @@
     <main class="section">
       <div class="container">
         <ul class="site-filter">
-          <li><button class="site-filter__button" type="button">Wszystkie</button></li>
-          <li><button class="site-filter__button" type="button">Strony</button></li>
-          <li><button class="site-filter__button" type="button">Aplikacje</button></li>
-          <li><button class="site-filter__button" type="button">Dizajn</button></li>
-          <li><button class="site-filter__button" type="button">Marketing</button></li>
+          <li>
+            <button class="site-filter__button site-filter__button--all" type="button">
+              Wszystkie
+            </button>
+          </li>
+          <li>
+            <button class="site-filter__button site-filter__button--sites" type="button">
+              Strony
+            </button>
+          </li>
+          <li>
+            <button class="site-filter__button site-filter__button--apps" type="button">
+              Aplikacje
+            </button>
+          </li>
+          <li>
+            <button class="site-filter__button site-filter__button--design" type="button">
+              Dizajn
+            </button>
+          </li>
+          <li>
+            <button class="site-filter__button site-filter__button--marketing" type="button">
+              Marketing
+            </button>
+          </li>
         </ul>
         <ul class="portfolio-list">
           <li class="portfolio-list__card" tabindex="0">
             <figure>
               <div class="portfolio-list__picture">
                 <img
-                  src="images/portfolio/technocrack.jpg"
-                  alt="strona internetowa na ekranie laptopa"
-                  width="370"
-                  height="294"
+                  src="images/portfolio/technocrack-450.jpg"
+                  alt="laptop"
+                  srcset="
+                    images/portfolio/technocrack-354.jpg   354w,
+                    images/portfolio/technocrack-370.jpg   370w,
+                    images/portfolio/technocrack-900.jpg   900w,
+                    images/portfolio/technocrack-1350.jpg 1350w
+                  "
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, 450px"
                 />
                 <div class="portfolio-list__overlay">
                   <p class="portfolio-list__overlay-text">
@@ -91,10 +127,15 @@
             <figure>
               <div class="portfolio-list__picture">
                 <img
-                  src="images/portfolio/nba-players.jpg"
-                  alt="zawodnicy nba walczą o piłkę"
-                  width="370"
-                  height="294"
+                  src="images/portfolio/basket-450.jpg"
+                  alt="gra w koszykówkę"
+                  srcset="
+                    images/portfolio/basket-354.jpg   354w,
+                    images/portfolio/basket-370.jpg   370w,
+                    images/portfolio/basket-900.jpg   900w,
+                    images/portfolio/basket-1350.jpg 1350w
+                  "
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, 450px"
                 />
                 <div class="portfolio-list__overlay">
                   <p class="portfolio-list__overlay-text">
@@ -114,10 +155,15 @@
             <figure>
               <div class="portfolio-list__picture">
                 <img
-                  src="images/portfolio/seafood-logo.jpg"
-                  alt="logo restauracji"
-                  width="370"
-                  height="294"
+                  src="images/portfolio/seafood-450.jpg"
+                  alt="logo"
+                  srcset="
+                    images/portfolio/seafood-354.jpg   354w,
+                    images/portfolio/seafood-370.jpg   370w,
+                    images/portfolio/seafood-900.jpg   900w,
+                    images/portfolio/seafood-1350.jpg 1350w
+                  "
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, 450px"
                 />
                 <div class="portfolio-list__overlay">
                   <p class="portfolio-list__overlay-text">
@@ -137,10 +183,15 @@
             <figure>
               <div class="portfolio-list__picture">
                 <img
-                  src="images/portfolio/headphones.jpg"
+                  src="images/portfolio/headphones-450.jpg"
                   alt="czarne słuchawki nauszne"
-                  width="370"
-                  height="294"
+                  srcset="
+                    images/portfolio/headphones-354.jpg   354w,
+                    images/portfolio/headphones-370.jpg   370w,
+                    images/portfolio/headphones-900.jpg   900w,
+                    images/portfolio/headphones-1350.jpg 1350w
+                  "
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, 450px"
                 />
                 <div class="portfolio-list__overlay">
                   <p class="portfolio-list__overlay-text">
@@ -159,7 +210,17 @@
           <li class="portfolio-list__card" tabindex="0">
             <figure>
               <div class="portfolio-list__picture">
-                <img src="images/portfolio/boxes.jpg" alt="dwa pudełka" width="370" height="294" />
+                <img
+                  src="images/portfolio/boxes-450.jpg"
+                  alt="dwa pudełka"
+                  srcset="
+                    images/portfolio/boxes-354.jpg   354w,
+                    images/portfolio/boxes-370.jpg   370w,
+                    images/portfolio/boxes-900.jpg   900w,
+                    images/portfolio/boxes-1350.jpg 1350w
+                  "
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, 450px"
+                />
                 <div class="portfolio-list__overlay">
                   <p class="portfolio-list__overlay-text">
                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
@@ -178,10 +239,15 @@
             <figure>
               <div class="portfolio-list__picture">
                 <img
-                  src="images/portfolio/monitor.jpg"
-                  alt="monitor lcd"
-                  width="370"
-                  height="294"
+                  src="images/portfolio/monitor-450.jpg"
+                  alt="monitor"
+                  srcset="
+                    images/portfolio/monitor-354.jpg   354w,
+                    images/portfolio/monitor-370.jpg   370w,
+                    images/portfolio/monitor-900.jpg   900w,
+                    images/portfolio/monitor-1350.jpg 1350w
+                  "
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, 450px"
                 />
                 <div class="portfolio-list__overlay">
                   <p class="portfolio-list__overlay-text">
@@ -201,10 +267,15 @@
             <figure>
               <div class="portfolio-list__picture">
                 <img
-                  src="images/portfolio/journal.jpg"
-                  alt="magazyn lifestylowy"
-                  width="370"
-                  height="294"
+                  src="images/portfolio/journal-450.jpg"
+                  alt="czasopismo"
+                  srcset="
+                    images/portfolio/journal-354.jpg   354w,
+                    images/portfolio/journal-370.jpg   370w,
+                    images/portfolio/journal-900.jpg   900w,
+                    images/portfolio/journal-1350.jpg 1350w
+                  "
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, 450px"
                 />
                 <div class="portfolio-list__overlay">
                   <p class="portfolio-list__overlay-text">
@@ -224,10 +295,15 @@
             <figure>
               <div class="portfolio-list__picture">
                 <img
-                  src="images/portfolio/label.jpg"
-                  alt="papierowa zawieszka"
-                  width="370"
-                  height="294"
+                  src="images/portfolio/tag-450.jpg"
+                  alt="zawieszka"
+                  srcset="
+                    images/portfolio/tag-354.jpg   354w,
+                    images/portfolio/tag-370.jpg   370w,
+                    images/portfolio/tag-900.jpg   900w,
+                    images/portfolio/tag-1350.jpg 1350w
+                  "
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, 450px"
                 />
                 <div class="portfolio-list__overlay">
                   <p class="portfolio-list__overlay-text">
@@ -247,10 +323,15 @@
             <figure>
               <div class="portfolio-list__picture">
                 <img
-                  src="images/portfolio/laptop.jpg"
-                  alt="praca z laptopem"
-                  width="370"
-                  height="294"
+                  src="images/portfolio/laptop-450.jpg"
+                  alt="laptop"
+                  srcset="
+                    images/portfolio/laptop-354.jpg   354w,
+                    images/portfolio/laptop-370.jpg   370w,
+                    images/portfolio/laptop-900.jpg   900w,
+                    images/portfolio/laptop-1350.jpg 1350w
+                  "
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, 450px"
                 />
                 <div class="portfolio-list__overlay">
                   <p class="portfolio-list__overlay-text">
@@ -271,58 +352,59 @@
     </main>
     <footer class="footer">
       <div class="footer__nav container">
-        <div>
-          <a class="logo" href="index.html"
-            >Web<span class="logo logo__studio--white">Studio</span></a
-          >
-          <address>
-            <ul class="footer__list">
-              <li><p class="footer__list-address">m. Warszawa Aleje Jerozolimskie 21</p></li>
+        <div class="footer__wrapper">
+          <div class="footer__info">
+            <a class="logo" href="index.html"
+              >Web<span class="logo logo__studio--white">Studio</span></a
+            >
+            <address>
+              <ul class="footer__list">
+                <li><p class="footer__list-address">m. Warszawa Aleje Jerozolimskie 21</p></li>
+                <li>
+                  <a
+                    class="footer__list-link footer__list-link--underline"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li><a class="footer__list-link" href="tel:+48111111111">+48 111 111 111</a></li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__container">
+            <span class="footer__header">Dołącz do nas</span>
+            <ul class="footer__socials footer__socials--margin">
               <li>
-                <a
-                  class="footer__list-link footer__list-link--underline"
-                  href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+                <a class="footer__socials-link" href="#">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
               </li>
-              <li><a class="footer__list-link" href="tel:+48111111111">+48 111 111 111</a></li>
+              <li>
+                <a class="footer__socials-link" href="#">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="footer__socials-link" href="#">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="footer__socials-link" href="#">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="footer__container">
-          <span class="footer__header">Dołącz do nas</span>
-          <ul class="footer__socials footer__socials--margin">
-            <li>
-              <a class="footer__socials-link" href="#">
-                <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer__socials-link" href="#">
-                <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer__socials-link" href="#">
-                <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer__socials-link" href="#">
-                <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-
         <div class="newsletter">
           <p class="newsletter__text">Zapisz sie do newslettera</p>
           <form class="newsletter__form">
@@ -337,5 +419,35 @@
         </div>
       </div>
     </footer>
+    <div class="menu js-menu-container" id="mobile-menu">
+      <button class="menu__toggle js-close-menu">
+        <svg viewBox="0 0 20 20" width="18" height="18">
+          <use href="./images/icons.svg#icon-close_24px"></use>
+        </svg>
+      </button>
+      <ul>
+        <li><a href="index.html" class="menu__link">Agencja</a></li>
+        <li><a href="portfolio.html" class="menu__link menu__link--portfolio">Portfolio</a></li>
+        <li><a href="#" class="menu__link menu__link--contact">Kontakt</a></li>
+      </ul>
+      <ul class="menu__contacts">
+        <li><a class="menu__contacts menu__contacts--phone" href="#">+48 111 111 111</a></li>
+        <li><a class="menu__contacts menu__contacts--mail" href="#">info@devstudio.com</a></li>
+      </ul>
+      <ul class="menu__socials">
+        <li><a class="menu__socials menu__socials--border" href="#">Instagram</a></li>
+        <li><a class="menu__socials menu__socials--border" href="#">Twitter</a></li>
+        <li><a class="menu__socials menu__socials--border" href="#">Facebook</a></li>
+        <li><a class="menu__socials" href="#">LinkedIn</a></li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

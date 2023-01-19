@@ -2,8 +2,10 @@
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale= 1.0 " />
     <title>Web Studio</title>
+    <link rel="icon" type="image/x-icon" href="./images/icons8-studio-16.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -24,9 +26,12 @@
       <div class="container header__wrapper">
         <nav class="header__nav">
           <a class="logo" href="index.html">Web<span class="logo logo__studio">Studio</span></a>
-          <button type="button" class="header__button js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu">
+          <button
+            type="button"
+            class="header__button js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
             <svg class="header__menu-icon" tabindex="0" width="40px" height="40px">
               <use href="./images/icons.svg#icon-menu_40px"></use>
             </svg>
@@ -88,7 +93,7 @@
               <article class="paragraph-section__item">
                 <div class="paragraph-section__icon">
                   <svg width="70" height="70">
-                    <use href="./images/icons.svg#icon-antenna1"></use>
+                    <use href="./images/icons.svg#icon-clock1"></use>
                   </svg>
                 </div>
                 <h3 class="paragraph-section__header">Lorem ipsum</h3>
@@ -102,7 +107,7 @@
               <article class="paragraph-section__item">
                 <div class="paragraph-section__icon">
                   <svg width="70" height="70">
-                    <use href="./images/icons.svg#icon-antenna1"></use>
+                    <use href="./images/icons.svg#icon-diagram1"></use>
                   </svg>
                 </div>
                 <h3 class="paragraph-section__header">Lorem ipsum</h3>
@@ -116,7 +121,7 @@
               <article class="paragraph-section__item">
                 <div class="paragraph-section__icon">
                   <svg width="70" height="70">
-                    <use href="./images/icons.svg#icon-antenna1"></use>
+                    <use href="./images/icons.svg#icon-astronaut1"></use>
                   </svg>
                 </div>
                 <h3 class="paragraph-section__header">Lorem ipsum</h3>
@@ -136,10 +141,10 @@
             <li>
               <div class="activities__picture-wrapper">
                 <img
-                  src="images/workspace.jpg"
-                  alt="praca nad aplikacją webową"
-                  width="370"
-                  height="294"
+                  src="images/workspace-370.jpg"
+                  alt="przestrzeń robocza komputera osobistego"
+                  srcset="images/workspace-740.jpg 740w, images/workspace-1110.jpg 1110w"
+                  sizes="370px"
                 />
                 <p class="activities__note">Aplikacje komputerowe</p>
               </div>
@@ -147,17 +152,22 @@
             <li>
               <div class="activities__picture-wrapper">
                 <img
-                  src="images/mobile.jpg"
-                  alt="praca nad aplikacją mobilną"
-                  width="370"
-                  height="294"
+                  src="images/mobile-370.jpg"
+                  alt="praca nad aplickacją mobilną"
+                  srcset="images/mobile-740.jpg 740w, images/mobile-1110.jpg 1110w"
+                  sizes="370px"
                 />
                 <p class="activities__note">Aplikacje mobilne</p>
               </div>
             </li>
             <li>
               <div class="activities__picture-wrapper">
-                <img src="images/colours.jpg" alt="praca nad aplikacją" width="370" height="294" />
+                <img
+                  src="images/colours-370.jpg"
+                  alt="praca z kolorami"
+                  srcset="images/colours-740.jpg 740w, images/colours-1110.jpg 1110w"
+                  sizes="370px"
+                />
                 <p class="activities__note">Rozwiązania graficzne</p>
               </div>
             </li>
@@ -172,17 +182,17 @@
               <figure class="staff__figure">
                 <img
                   src="images/product-designer-450.jpg"
-                  
                   alt="John Doe Product Designer"
-                  
-                  srcset="images/product-designer-450.jpg 450w,
-                          images/product-designer-270.jpg 270w,
-                          images/product-designer-354.jpg 354w,
-                          images/product-designer-708.jpg 708w,
-                          images/product-designer-900.jpg 900w,
-                          images/product-designer-1062.jpg 1062w,
-                          images/product-designer-1350.jpg 1350w
-                          "
+                  srcset="
+                    images/product-designer-270.jpg   270w,
+                    images/product-designer-540.jpg   540w,
+                    images/product-designer-810.jpg   810w,
+                    images/product-designer-354.jpg   354w,
+                    images/product-designer-708.jpg   708w,
+                    images/product-designer-900.jpg   900w,
+                    images/product-designer-1062.jpg 1062w,
+                    images/product-designer-1350.jpg 1350w
+                  "
                   sizes="(min-width:1200px) 270px, (min-width:768px) 354px, 450px"
                 />
                 <figcaption>
@@ -224,18 +234,18 @@
             <li>
               <figure class="staff__figure">
                 <img
-                  src="images/product-designer-450.jpg"
-                  
-                  alt="John Doe Product Designer"
-                
-                  srcset="images/product-designer-450.jpg 450w,
-                        images/product-designer-270.jpg 270w,
-                        images/product-designer-354.jpg 354w,
-                        images/product-designer-708.jpg 708w,
-                        images/product-designer-900.jpg 900w,
-                        images/product-designer-1062.jpg 1062w,
-                        images/product-designer-1350.jpg 1350w
-                        "
+                  src="images/frontend-450.jpg"
+                  alt="John Doe Frontend Developer"
+                  srcset="
+                    images/frontend-270.jpg   270w,
+                    images/frontend-540.jpg   540w,
+                    images/frontend-810.jpg   810w,
+                    images/frontend-354.jpg   354w,
+                    images/frontend-708.jpg   708w,
+                    images/frontend-900.jpg   900w,
+                    images/frontend-1062.jpg 1062w,
+                    images/frontend-1350.jpg 1350w
+                  "
                   sizes="(min-width:1200px) 270px, (min-width:768px) 354px, 450px"
                 />
                 <figcaption>
@@ -277,17 +287,18 @@
             <li>
               <figure class="staff__figure">
                 <img
-                  src="images/product-designer-450.jpg"
-                  
-                  alt="John Doe Product Designer"
-                  srcset="images/product-designer-450.jpg 450w,
-                        images/product-designer-270.jpg 270w,
-                        images/product-designer-354.jpg 354w,
-                        images/product-designer-708.jpg 708w,
-                        images/product-designer-900.jpg 900w,
-                        images/product-designer-1062.jpg 1062w,
-                        images/product-designer-1350.jpg 1350w
-                        "
+                  src="images/marketing-450.jpg"
+                  alt="John Doe Marketing Specialist"
+                  srcset="
+                    images/marketing-270.jpg   270w,
+                    images/marketing-540.jpg   540w,
+                    images/marketing-810.jpg   810w,
+                    images/marketing-354.jpg   354w,
+                    images/marketing-708.jpg   708w,
+                    images/marketing-900.jpg   900w,
+                    images/marketing-1062.jpg 1062w,
+                    images/marketing-1350.jpg 1350w
+                  "
                   sizes="(min-width:1200px) 270px, (min-width:768px) 354px, 450px"
                 />
                 <figcaption>
@@ -329,18 +340,18 @@
             <li>
               <figure class="staff__figure">
                 <img
-                  src="images/product-designer-450.jpg"
-                  
-                  alt="John Doe Product Designer"
-                  
-                  srcset="images/product-designer-450.jpg 450w,
-                        images/product-designer-270.jpg 270w,
-                        images/product-designer-354.jpg 354w,
-                        images/product-designer-708.jpg 708w,
-                        images/product-designer-900.jpg 900w,
-                        images/product-designer-1062.jpg 1062w,
-                        images/product-designer-1350.jpg 1350w
-                        "
+                  src="images/ui-450.jpg"
+                  alt="John Doe UI Designer"
+                  srcset="
+                    images/ui-270.jpg   270w,
+                    images/ui-540.jpg   540w,
+                    images/ui-810.jpg   810w,
+                    images/ui-354.jpg   354w,
+                    images/ui-708.jpg   708w,
+                    images/ui-900.jpg   900w,
+                    images/ui-1062.jpg 1062w,
+                    images/ui-1350.jpg 1350w
+                  "
                   sizes="(min-width:1200px) 270px, (min-width:768px) 354px, 450px"
                 />
                 <figcaption>
@@ -501,7 +512,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal> 
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__close-button" data-modal-close>×</button>
         <header class="modal__header">Zostaw swoje dane w formularzu poniżej</header>
@@ -554,34 +565,25 @@
       </div>
     </div>
     <script src="js/modal.js"></script>
-    <div class="menu js-menu-container">
+    <div class="menu js-menu-container" id="mobile-menu">
       <button class="menu__toggle js-close-menu">
-        <svg
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
+        <svg viewBox="0 0 20 20" width="18" height="18">
+          <use href="./images/icons.svg#icon-close_24px"></use>
         </svg>
       </button>
       <ul>
         <li><a href="index.html" class="menu__link">Agencja</a></li>
         <li><a href="portfolio.html" class="menu__link menu__link--portfolio">Portfolio</a></li>
-        <li><a href="#" class="menu__link menu__link--kontakt">Kontakt</a></li>
+        <li><a href="#" class="menu__link menu__link--contact">Kontakt</a></li>
       </ul>
       <ul class="menu__contacts">
         <li><a class="menu__contacts menu__contacts--phone" href="#">+48 111 111 111</a></li>
         <li><a class="menu__contacts menu__contacts--mail" href="#">info@devstudio.com</a></li>
       </ul>
       <ul class="menu__socials">
-        <li><a class="menu__socials menu__socials--link" href="#">Instagram</a></li>
-        <li><a class="menu__socials menu__socials--link" href="#">Twitter</a></li>
-        <li><a class="menu__socials menu__socials--link" href="#">Facebook</a></li>
+        <li><a class="menu__socials menu__socials--border" href="#">Instagram</a></li>
+        <li><a class="menu__socials menu__socials--border" href="#">Twitter</a></li>
+        <li><a class="menu__socials menu__socials--border" href="#">Facebook</a></li>
         <li><a class="menu__socials" href="#">LinkedIn</a></li>
       </ul>
     </div>
@@ -595,4 +597,3 @@
     <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
-
