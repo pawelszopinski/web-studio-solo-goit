@@ -43,7 +43,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 40px;
-    height: 100vh;
+    height: calc(100vh - 30px);
   }
 
   &__link {
