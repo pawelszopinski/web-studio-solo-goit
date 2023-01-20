@@ -43,7 +43,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 40px;
-    height: calc(100vh - 30px);
+    height: 100vh;
   }
 
   &__link {
@@ -105,5 +105,6 @@
     &--border {
       border-right: 1px solid var(--border-third-color);
     }
+    
   }
 }
