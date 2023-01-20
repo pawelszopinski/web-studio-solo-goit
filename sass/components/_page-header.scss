@@ -4,7 +4,7 @@
     display: flex;
   }
   &__wrapper {
-    min-width: 100%;
+    width: 100%;
     padding: 16px 15px;
     @include tablet {
       display: flex;

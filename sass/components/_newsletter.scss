@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+
   @include desktop {
     align-items: normal;
   }
@@ -9,9 +11,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
     gap: 20px;
+    width: 100%;
     @include desktop {
       flex-direction: row;
+      gap: 12px;
     }
   }
 
@@ -29,7 +34,7 @@
   }
 
   &__input-email {
-    max-width: 358px;
+    max-width: 450px;
     height: 50px;
     border: 1px solid #ffffff4d;
     border-radius: 4px;
@@ -40,15 +45,19 @@
     font-weight: 700;
     line-height: 1.875;
     letter-spacing: 0.06em;
+    width: 100%;
     &:hover,
     &:focus {
       border-color: var(--secondary-color);
       transition: var(--standard-transition-duration) var(--standard-transition-flow) border-color;
     }
+    @include desktop {
+      min-width: 358px;
+    }
   }
   &__button {
     position: relative;
-    width: 200px;
+    max-width: 200px;
     height: 50px;
     border: none;
     border-radius: 4px;
@@ -61,6 +70,7 @@
     color: var(--footer-second-color);
     box-shadow: 0px 4px 4px 0px var(--first-button-shadow);
     cursor: pointer;
+    width: 100%;
     transition: var(--standard-transition-duration) box-shadow var(--standard-transition-flow);
   }
   &__icon {
