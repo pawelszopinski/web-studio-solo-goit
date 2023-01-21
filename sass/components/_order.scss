@@ -84,6 +84,11 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     max-width: 365px;
+    @include desktop {
+      max-width: 696px;
+      font-size: 44px;
+      line-height: 1.363;
+    }
   }
   &__button {
     font-weight: 700;
