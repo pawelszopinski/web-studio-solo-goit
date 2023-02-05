@@ -1,1 +1,1 @@
-https://pawelszopinski.github.io/goit-markup-hw-08/
+https://pawelszopinski.github.io/web-studio-solo-goit/
